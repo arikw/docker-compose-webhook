@@ -10,6 +10,10 @@ The container expects to find a `hooks.json` file inside `${SERVER_DIR}/config/h
 
 [See configuration documentation](https://github.com/adnanh/webhook/blob/master/README.md#configuration)
 
+### Usage Example
+
+`docker run -v "$(pwd)/my-config-dir":/server/config arikwe/docker-compose-webhook`
+
 ## Build Arguments
 | Arg Name    | Description |
 | ----------- | ----------- |
