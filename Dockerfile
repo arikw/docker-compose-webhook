@@ -1,7 +1,7 @@
 ARG COMPOSE_VERSION=1.28.4
 FROM docker/compose:$COMPOSE_VERSION
 
-ARG WEBHOOK_VERSION=2.6.9
+ARG WEBHOOK_VERSION=2.8.0
 
 # install webhook
 RUN apk add --no-cache curl && \
