@@ -12,15 +12,4 @@ The container expects to find a `hooks.json` file inside `${SERVER_DIR}/config/h
 
 ### Usage Example
 
-`docker run -v "$(pwd)/my-config-dir":/server/config arikwe/docker-compose-webhook`
-
-## Build Arguments
-| Arg Name    | Description |
-| ----------- | ----------- |
-`SERVER_DIR`  | container working directory (defaults to `/server`)
-
-## Environment Variables
-| Var Name    | Description |
-| ----------- | ----------- |
-`PORT` | webhook service listening port (defaults to 9000)
-
+`docker run --rm -it -p 9001:9000 -v "$(pwd)/config":/server/config arikwe/docker-compose-webhook -hooks /server/config/hooks.json -template -verbose`
